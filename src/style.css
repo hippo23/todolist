@@ -1,0 +1,339 @@
+@import "@fontsource/open-sans/400.css";
+@import "@fontsource/raleway/700.css";
+
+html,
+body {
+  color: white;
+  background-color: #323233;
+  width: 100%;
+  margin: 0px;
+  font-family: "Open Sans";
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#content {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+
+#sidebar {
+  width: 40.5%;
+  max-width: 370px;
+  height: 100%;
+  background: #323233;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#main {
+  flex: 1;
+  background: #202023;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+#todo-tabs {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+#project-tabs {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+#project-tabs button {
+  height: 40px;
+  background-color: #323233;
+  color: white;
+  border: none;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+#todo-tabs button {
+  height: 40px;
+  background-color: #323233;
+  color: white;
+  border: none;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+#project-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+  margin: 0;
+}
+
+#todo-tabs button:hover {
+  background: #474747;
+  cursor: pointer;
+}
+
+#project-tabs button:hover {
+  background: #474747;
+  cursor: pointer;
+}
+
+#projects {
+}
+
+#project-title {
+  font-size: 16px;
+  font-family: "raleway";
+}
+
+#project-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+#project-add {
+  border: none;
+  background: #323233;
+  color: white;
+  font-size: 20px;
+  border-radius: 10%;
+  height: auto;
+  cursor: pointer;
+}
+
+#project-add:hover {
+  background: #7a7a79;
+}
+
+#main-title {
+  font-family: "raleway";
+}
+
+.todo-item button {
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  background-color: #202023;
+  border: 1.5px solid #5e5e61;
+  cursor: pointer;
+}
+
+#todo-list {
+  height: 100%;
+  max-width: 50%;
+  width: 50vw;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  margin-bottom: auto;
+  height: 50%;
+}
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  justify-content: center;
+}
+
+.todo-title {
+  margin-bottom: auto;
+}
+
+.todo-date {
+  color: #ff6940;
+  background-color: #202023;
+  border: none;
+  font-size: 15px;
+  margin-top: auto;
+}
+
+.todo-item hr {
+  width: 100%;
+  padding: 0;
+  margin-top: auto;
+}
+
+hr {
+  border-color: #323233;
+}
+
+.card-options {
+  margin: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card-options button {
+  width: 40%;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid #00ccff;
+  background-color: #202023;
+  color: #00ccff;
+  font-size: 15px;
+}
+
+#project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  height: auto;
+  width: 300px;
+  position: fixed;
+  background-color: #202023;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 1px solid #323233;
+  padding: 20px;
+  flex: 1 1 auto;
+}
+
+#todo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  height: 350px;
+  width: 300px;
+  position: fixed;
+  background-color: #202023;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 1px solid #323233;
+  padding: 5px;
+  flex: 1 1 auto;
+}
+
+.entry-form {
+  width: 90%;
+  height: auto;
+}
+
+.entry-form input {
+  width: 100%;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #323233;
+  padding: 5px;
+}
+
+.todo-attributes {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  margin: 0px;
+}
+
+.todo-attributes input {
+  background-color: #323233;
+  color: white;
+  border: 5px;
+}
+
+#priority {
+  border: none;
+  color: black;
+  border-radius: 0px;
+  appearance: none;
+}
+
+#todo-card button {
+  width: 90%;
+  border-radius: 5px;
+  border: 3px solid #00ccff;
+  background-color: #202023;
+  color: #00ccff;
+  height: 15%;
+  font-size: 15px;
+}
+
+#todo-card button:hover {
+  cursor: pointer;
+}
+.entry-form h3 {
+  font-size: 18px;
+}
+
+#add-task-bar {
+  margin-top: auto;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202023;
+  border: 1px solid #323233;
+}
+
+#add-task-bar button {
+  background-color: #202023;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+#add-task-bar button:hover {
+  background: #474747;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active {
+}
